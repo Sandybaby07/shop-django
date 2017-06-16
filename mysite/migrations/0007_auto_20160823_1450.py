@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='image',
-            field=filer.fields.image.FilerImageField(related_name='product_image', to=b'filer.Image'),
+            field=filer.fields.image.FilerImageField(related_name='product_image', to='filer.Image'),
         ),
     ]
