@@ -25,7 +25,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
+class NewTable(models.Model):
+    no = models.CharField(max_length=20)
+   
+    def __str__(self):
+        return self.no
+    
 class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     full_name = models.CharField(max_length=20)
